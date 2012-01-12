@@ -3,8 +3,9 @@
 require 'php-sdk/src/facebook.php';
 
 $facebook = new Facebook(array(
-  // 'appId'  => '322457274454128',
-  // 'secret' => 'eee4f7ae473544b3864b566b7054ade2',
+	//
+	// heroku config:add FACEBOOK_APP_ID=YOUR_APP_ID FACEBOOK_SECRET=YOUR_APP_SECRET
+	//
 	'appId' => getenv('FACEBOOK_APP_ID'),
 	'secret' => getenv('FACEBOOK_SECRET'),
 ));
